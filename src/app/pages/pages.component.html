@@ -1,0 +1,52 @@
+
+
+<!-- Hay un Archivo Llamado Green-dark.css que me dio problema en el componente [ header.component.html ]
+le cambie el color verde feisimo por white y los icons [ lupa,notification, email ] blinkiaban cuando se hacia el hoover
+de la linea 28 a la 37 se quito para que no diera el efecto de desaparecer cuando pasa el mouse por donde ellos -->
+
+<div id="main-wrapper">
+
+    <app-header></app-header>
+    <app-sidebar></app-sidebar>
+
+    <div class="page-wrapper">
+
+        <div class="container-fluid">
+
+            <!-- BreadCumbs -->
+            <app-breadcrumbs></app-breadcrumbs>
+            
+            <!-- Mi Sistema de Rutas -->
+
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- This is some text within a card block. -->
+                                <router-outlet></router-outlet>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+                   <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer" style="text-align: center;">
+                © 20xx Admin Pro by wrappixel.com
+            
+            </footer>
+    </div>
+
+     
+
+</div>
+
+
+
+
