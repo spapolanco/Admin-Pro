@@ -22,19 +22,19 @@ const routes: Routes = [
 // path:'/compras' comprasRouting
 
 
-  // { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: '**', component: NopagefoundComponent },
 
 
 ];
 
 @NgModule({
-  // imports: [RouterModule.forRoot(routes),
-  //   // imports: [RouterModule.forRoot(routes, {useHash:true})],
-  // PagesRoutingModule,
-  // AuthRoutingModule
 
-  imports: [RouterModule.forRoot(routes, {useHash:true}),PagesRoutingModule,AuthRoutingModule],
+
+  imports: [RouterModule.forRoot(routes),
+    PagesRoutingModule,
+    AuthRoutingModule],
+ 
 
   exports: [RouterModule]
 })

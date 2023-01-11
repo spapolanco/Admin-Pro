@@ -1,0 +1,76 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <div class="card-body">
+
+                    <h4 class="card-title">Default Progress bars </h4>
+
+                    <div class="progress m-t-20">
+                        <div  class="progress-bar bg-primary " style="height:20px;"  [style.width]="getPorcentaje" 
+                            role="progressbar"  > {{getPorcentaje}}
+                        </div>
+                    </div>
+
+
+                    <div class="progress m-t-20">
+                        <div  class="progress-bar bg-info " style="height:20px;"  [style.width]="getPorcentaje" 
+                            role="progressbar"  > {{getPorcentaje}}
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button (click)="cambiarValor(-5)" class="btn btn-primary" type="button">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                    </span>
+
+                    <input type="text" 
+                    class="form-control" 
+                    placeholder="Progreso"
+                    [(ngModel)]="progreso"
+                    maxlength="2"
+                    
+                    onkeypress="return onlyNumberKey(event)" /> 
+
+                    <span class="input-group-btn">
+                        <button (click)="cambiarValor(5)" class="btn btn-primary" type="button">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                2
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
