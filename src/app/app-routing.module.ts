@@ -34,6 +34,7 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes),
     PagesRoutingModule,
     AuthRoutingModule],
+    
  
 
   exports: [RouterModule]
