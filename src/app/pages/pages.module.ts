@@ -13,6 +13,7 @@ import { ProgressComponent } from './progress/progress.component';
 import { Progress2Component } from './progress2/progress2.component';
 import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
+import { AccountSettingComponent } from './account-setting/account-setting.component';
 
 
 
@@ -25,6 +26,7 @@ import { PagesComponent } from './pages.component';
     Grafica1Component,
     PagesComponent,
     Progress2Component,
+    AccountSettingComponent,
   ],
   // Cuando los vamos a usar fuera de su Modulo entonces debemos exportarlo para
   // que pueda ser usados por ootros componente
@@ -33,6 +35,7 @@ import { PagesComponent } from './pages.component';
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
+    AccountSettingComponent
   ],
   imports: [
     CommonModule, 
